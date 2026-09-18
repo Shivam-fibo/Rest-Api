@@ -1,7 +1,5 @@
-// src/features/students/student.model.js
 const mongoose = require('mongoose');
 
-// Define the schema for Student data
 const studentSchema = new mongoose.Schema(
   {
     name: {
@@ -26,11 +24,10 @@ const studentSchema = new mongoose.Schema(
     },
   },
   {
-    timestamps: true, // Automatically manages createdAt and updatedAt
+    timestamps: true,
   }
 );
 
-// Create and export the Mongoose model
 const Student = mongoose.model('Student', studentSchema);
 
 module.exports = Student;

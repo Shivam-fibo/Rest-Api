@@ -1,4 +1,3 @@
-// src/features/students/student.routes.js
 const express = require('express');
 const {
   createStudent,
@@ -10,7 +9,6 @@ const {
 
 const router = express.Router();
 
-// Route definitions for Student resource
 router.post('/', createStudent);
 router.get('/', getStudents);
 router.get('/:id', getStudent);
